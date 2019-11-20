@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document title</title>
+    <title>Cloud Snowboard Shop</title>
     <meta name="description" content="[A short description]">
     <meta name="author" content="[Your Name]">
     <link rel="stylesheet" href="css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
@@ -11,48 +11,52 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
+    <header class="header-style">
       <!-- Site logo, replace with your own -->
-      <a href="index.html"><img src="img/logo.svg" alt="HTML Logo (replace this)"></a>
-
-      <!-- Navigation menu and toggle button (non-functional) -->
-      <nav aria-label="Primary">
-        <button type="button">
-          <span class="material-icons">menu</span>
-        </button>
-        <ul>
-          <li><a href="#">Category</a>
-            <ul>
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Category</a></li>
-          <li><a href="#">Category</a></li>
-          <li><a href="#">Category</a></li>
-        </ul>
-      </nav>
-
+      <a class="logo-img" href="index.html"><img src="img/cloud-white.svg" alt="HTML Logo Cloud Logo for Cloud Snowboards"></a>
       <!-- Search for a product (non-functional) -->
-      <form>
-        <label>Search
+      <form class="alignment">
+        <!-- <label>Product Search
           <input type="search" name="find" id="find">
-        </label>
+        </label> -->
         <button type="button"><span class="material-icons">search</span></button>
       </form>
 
       <!-- Additional nav links -->
 
-      <ul>
-        <li><a href="#"><span class="material-icons">favorite_border</span></a></li>
-        <li><a href="#"><span class="material-icons">shopping_cart</span></a></li>
+      <ul  class="alignment">
+        <li class="alignment"><a href="#"><span class="material-icons">favorite_border</span></a></li>
+        <li class="alignment"><a href="#"><span class="material-icons">shopping_cart</span></a></li>
       </ul>
+
+      <!-- Navigation menu and toggle button (non-functional) -->
+      <nav  class="alignment" aria-label="Primary">
+          <button type="button">
+            <span class="material-icons">menu</span>
+          </button>
+          <ul class="mainmenu">
+            <li><a href="#">Snowboards</a>
+              <ul>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Bindings</a>
+              <ul>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Photos</a></li>
+          </ul>
+        </nav>
     </header>
 
-    <main>
+    <main >
+      <div><img src="img/mountain.jpg" alt="Image of a mountain Range"><h1 class="section-header-title">Snowboard</h1><div>
       <header>
-        <h1>Sale on [Category Name]</h1>
+        <h1 class="page-title">Mens Snowboards</h1>
 
         <!-- Filtering product form -->
         <form>
@@ -65,7 +69,7 @@
               <option value="newest">Newest releases</option>
             </select>
           </fieldset>
-          <fieldset>
+          <!-- <fieldset>
             <legend>Colour</legend>
             <ul>
               <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
@@ -74,18 +78,18 @@
               <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Red</label></li>
               <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
             </ul>
-          </fieldset>
+          </fieldset> -->
           <fieldset>
             <legend>Sizes</legend>
             <ol>
-              <li><input type="checkbox" name="size" value="xs" id="xs"> <label for="xs">XS</label></li>
-              <li><input type="checkbox" name="size" value="sm" id="sm"> <label for="sm">S</label></li>
-              <li><input type="checkbox" name="size" value="md" id="md"> <label for="md">M</label></li>
-              <li><input type="checkbox" name="size" value="lg" id="lg"> <label for="lg">L</label></li>
-              <li><input type="checkbox" name="size" value="xl" id="xl"> <label for="xl">XL</label></li>
+              <li><input type="checkbox" name="size" value="153" id="153"> <label for="153">153</label></li>
+              <li><input type="checkbox" name="size" value="156" id="156"> <label for="156">156</label></li>
+              <li><input type="checkbox" name="size" value="158" id="158"> <label for="158">158</label></li>
+              <li><input type="checkbox" name="size" value="162" id="162"> <label for="162">162</label></li>
+              <li><input type="checkbox" name="size" value="162MW" id="162MW"> <label for="162MW">162MW</label></li>
             </ol>
           </fieldset>
-          <fieldset>
+          <!-- <fieldset>
             <legend>Ratings (above)</legend>
             <ol>
               <li>
@@ -113,217 +117,219 @@
                 </label>
               </li>
             </ol>
-          </fieldset>
+          </fieldset> -->
         </form>
       </header>
 
       <section>
         <h2>Results</h2>
 
-        <!-- Product 1 -->
-        <article>
-          <header>
-            <img src="img/product.jpg" alt="Product Image">
-          </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-
-            <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-              <a href="#">see more</a>
-            </footer>
-          </form>
-        </article>
-
-        <!-- Product 2 -->
-        <article>
-          <header>
-            <img src="img/product.jpg" alt="Product Image">
-          </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-
-            <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-              <a href="#">see more</a>
-            </footer>
-          </form>
-        </article>
-
-        <!-- Product 3 -->
-        <article>
-          <header>
-            <img src="img/product.jpg" alt="Product Image">
-          </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-
-            <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-              <a href="#">see more</a>
-            </footer>
-          </form>
-        </article>
+        <div class="layout">
+          <!-- Product 1 -->
+          <article class="products">
+            <header>
+              <img class="product-img" src="img/arbor-whisky.jpg" alt="Product Image of the Arobr Whiskey">
+            </header>
+            <h3 class="product-title">Arbor Whiskey</h3>
+            <p class="products-text">Hmmm, it seems as though Arbor is mixing its spirits with the naming scheme - American Whiskey is usually predominately made of corn, not malted barley as is Scotch Whisky - but we'll forgive this and take the Arbor Whiskey Snowboard straight up with a splash of pow for a season of shredding fun. A tough to beat combination of easy handling, tremendous performance in all snow types and top quality hand-built construction make the Whiskey darned easy to swallow. The Whiskey is a true all-mountain board that features an easy to ride Rocker System deisgn and durable construction at an affordable price.</p>
+            <form>
+      
+              <fieldset>
+                <legend>Sizes</legend>
+                <ol>
+                  <li><label><input type="radio" name="size" value="153">153</label></li>
+                  <li><label><input type="radio" name="size" value="156">156</label></li>
+                  <li><label><input type="radio" name="size" value="158">158</label></li>
+                  <li><label><input type="radio" name="size" value="162">162</label></li>
+                  <li><label><input type="radio" name="size" value="162MW">162MW</label></li>
+                </ol>
+              </fieldset>
   
-        <!-- Product 4 -->
-        <article>
-          <header>
-            <img src="img/product.jpg" alt="Product Image">
-          </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
+              <footer>
+                <dl>
+                  <dt>Rating</dt>
+                  <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+                </dl>
+                <data value="499.99"><del>$549.99</del> <ins>$499.99</ins></data>
+                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+                <button type="button"><span class="material-icons">favorite</span></button>
+                <a href="#">see more</a>
+              </footer>
+            </form>
+          </article>
+  
+          <!-- Product 2 -->
+          <article class="products">
+            <header>
+              <img class="product-img" src="img/arbor-element.jpg" alt="Product Image of the Arbor Element">
+            </header>
+            <h3 class="product-title">Arbor Element</h3>
+            <p class="products-text">The Element is the board that launched the Arbor brand. Over the years, it has become our cornerstone, evolving with the times to remain the perfect all-terrain design. The Element is a mountain twin built for super clean, highly reliable performance and constructed with a focus on quality craftsmanship. This quintessential board speaks to our core mission and is sure to remain a classic for years to come. The Element is available in both System Rocker and System Camber technologies. The System Camber design offers a poppy ride with crisp, fully engaged performance.</p>
+            <form>
+              <fieldset>
+                <legend>Sizes</legend>
+                <ol>
+                  <li><label><input type="radio" name="size" value="153">153</label></li>
+                  <li><label><input type="radio" name="size" value="156">156</label></li>
+                  <li><label><input type="radio" name="size" value="158">158</label></li>
+                  <li><label><input type="radio" name="size" value="162">162</label></li>
+                  <li><label><input type="radio" name="size" value="162MW">162MW</label></li>
+                </ol>
+              </fieldset>
+  
+              <footer>
+                <dl>
+                  <dt>Rating</dt>
+                  <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+                </dl>
+                <data value="549.99"><ins>$549.99</ins></data>
+                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+                <button type="button"><span class="material-icons">favorite</span></button>
+                <a href="#">see more</a>
+              </footer>
+            </form>
+          </article>
+  
+          <!-- Product 3 -->
+          <article class="products">
+            <header>
+              <img class="product-img" src="img/arbor-a-frame.jpg" alt="Product Image of the Arbor A-Frame">
+            </header>
+            <h3 class="product-title">Arbor A-Frame</h3>
+            <p class="products-text">A new twist on an old favorite, the A-Frame is known for its relentless edge hold and unparalleled stability at speed and is now built with a directional, System Camber design. The newly redesigned chassis along with the addition of Grip-Tech contact points and Uprise fenders create a carving machine with an elevated ability to rail on edge and charge through chop. A slight taper in the tail increases the boards float in deeper snow and a sintered base guarantees you'll have no problem reaching maximum velocity. RWD Carbon A-Frame reinforcements run diagonally from the rear contact points to underneath the back foot, increasing power and drive when setting an edge to initiate hard-line carving.</p>
+            <form>
+              <fieldset>
+                <legend>Sizes</legend>
+                <ol>
+                  <li><label><input type="radio" name="size" value="153">153</label></li>
+                  <li><label><input type="radio" name="size" value="156">156</label></li>
+                  <li><label><input type="radio" name="size" value="158">158</label></li>
+                  <li><label><input type="radio" name="size" value="162">162</label></li>
+                  <li><label><input type="radio" name="size" value="162MW">162MW</label></li>
+                </ol>
+              </fieldset>
+  
+              <footer>
+                <dl>
+                  <dt>Rating</dt>
+                  <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+                </dl>
+                <data value="699.99"><ins>$699.99</ins></data>
+                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+                <button type="button"><span class="material-icons">favorite</span></button>
+                <a href="#">see more</a>
+              </footer>
+            </form>
+          </article>
+    
+          <!-- Product 4 -->
+          <article class="products">
+            <header>
+              <img class="product-img" src="img/arbor-cam.jpg" alt="Product Image of the Arbor Annex">
+            </header>
+            <h3 class="product-title">Arbor Annex</h3>
+            <p class="products-text">The Annex is the newest and most technical creation to stem from the ongoing collaboration between Bryan Iguchi and Arbor Snowboards. As Bryan's riding progressed to a state where he spends most of his time riding big-mountain lines, he needed a directional evolution of the fundamental performance we built into the Iguchi Pro Camber. Built on our System Camber technology, the Annex features a longer, drawn out nose with additional taper and a stub tail. The combination of these three features allow the board to float through powder effortlessly with increased power and drive when setting an edge. The Bio-Plastic Topsheet binds a Powerply stringer with our brand-new Carbon Vector Net reinforcements resulting in evenly distributed torsional power and accelerated response from tip to tail. The Annex features our extra-lightweight FSC Certified Highland ll Core, Recycled Steel Edges, and Entropy Bio Resin, making it both the principal of performance and sustainability in the Arbor line. The base graphic "scratches the surface of space an time" featuring artwork from Bryan's Art of Erosion gallery work.</p>
+            <form>
+              <fieldset>
+                <legend>Sizes</legend>
+                <ol>
+                  <li><label><input type="radio" name="size" value="153">153</label></li>
+                  <li><label><input type="radio" name="size" value="156">156</label></li>
+                  <li><label><input type="radio" name="size" value="158">158</label></li>
+                  <li><label><input type="radio" name="size" value="162">162</label></li>
+                  <li><label><input type="radio" name="size" value="162MW">162MW</label></li>
+                </ol>
+              </fieldset>
+  
+              <footer>
+                <dl>
+                  <dt>Rating</dt>
+                  <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+                </dl>
+                <data value="799.99"><ins>$799.99</ins></data>
+                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+                <button type="button"><span class="material-icons">favorite</span></button>
+                <a href="#">see more</a>
+              </footer>
+            </form>
+          </article>
+  
+          <!-- Product 5 -->
+          <article class="products">
+            <header>
+              <img class="product-img" src="img/arbor-cask.jpg" alt="Product Imag of the Arbor Cask">
+            </header>
+            <h3 class="product-title">Arbor Cask</h3>
+            <p class="products-text">The Cask is a high volume, short length, System Camber snowboard designed for resort powder days that require a board with the versatility to handle the gamut of conditions you'll experience from your first untouched run to your last rally through the chop. A long drawn out nose for effortless float is paired with camber under foot and a short stub tail to maximize control through deep snow. Pow-Tech contact points under the back foot create a stronger edge to snow connection while Uprise Fenders soften edge-to-edge transition. The Cask is so much fun, you won't want to head home until you've ripped every last secret stash on the mountain.</p>
+            <form>
+              <fieldset>
+                <legend>Sizes</legend>
+                <ol>
+                  <li><label><input type="radio" name="size" value="153">153</label></li>
+                  <li><label><input type="radio" name="size" value="156">156</label></li>
+                  <li><label><input type="radio" name="size" value="158">158</label></li>
+                  <li><label><input type="radio" name="size" value="162">162</label></li>
+                  <li><label><input type="radio" name="size" value="162MW">162MW</label></li>
+                </ol>
+              </fieldset>
+  
+              <footer>
+                <dl>
+                  <dt>Rating</dt>
+                  <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+                </dl>
+                <data value="599.99"><ins>$599.99</ins></data>
+                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+                <button type="button"><span class="material-icons">favorite</span></button>
+                <a href="#">see more</a>
+              </footer>
+            </form>
+          </article>
+  
+          <!-- Product 6 -->
+          <article class="products">
+            <header>
+              <img class="product-img" src="img/arbor-shiloh.jpg" alt="Product Image of the Arbor Shiloh">
+            </header>
+            <h3 class="product-title">Arbor Shiloh</h3>
+            <p class="products-text">The Shiloh is a versatile mountain twin tailored for experienced freeriders who need a board to deliver quick edge-to-edge performance, snappy takeoffs and stable landings. A daily driver, the Shiloh excels in backcountry freestyle, but will hold its own anywhere on the mountain including trees, groomers, and the park. The Shiloh is available in both System Rocker and System Camber technologies. The System Camber design offers a poppy ride with crisp, fully engaged performance. The 2020 Shiloh is an artist collaboration with Portland based designer, Aaron James Draplin, known for his utilitarian, intelligently simplistic style and countless design contributions to the world of snowboarding.</p>
+            <form>
+              <fieldset>
+                <legend>Sizes</legend>
+                <ol>
+                  <li><label><input type="radio" name="size" value="153">153</label></li>
+                  <li><label><input type="radio" name="size" value="156">156</label></li>
+                  <li><label><input type="radio" name="size" value="158">158</label></li>
+                  <li><label><input type="radio" name="size" value="162">162</label></li>
+                  <li><label><input type="radio" name="size" value="162MW">162MW</label></li>
+                </ol>
+              </fieldset>
+    
+              <footer>
+                <dl>
+                  <dt>Rating</dt>
+                  <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+                </dl>
+                <data value="549.99"><del>$599.99</del> <ins>$549.99</ins></data>
+                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+                <button type="button"><span class="material-icons">favorite</span></button>
+                <a href="#">see more</a>
+              </footer>
+            </form>
+          </article>
+        </div>
 
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-
-            <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-              <a href="#">see more</a>
-            </footer>
-          </form>
-        </article>
-
-        <!-- Product 5 -->
-        <article>
-          <header>
-            <img src="img/product.jpg" alt="Product Image">
-          </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-
-            <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-              <a href="#">see more</a>
-            </footer>
-          </form>
-        </article>
       </section>
 
+      
       <section role="navigation" aria-label="Pagination">
-        <p>1-5 of 23 products found</p>
+        <p>1-6 of 23 products found</p>
         <ol>
-          <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
-          <li><a href="#" aria-label="Page 2">2</a></li>
-          <li><a href="#" aria-label="Page 3">3</a></li>
-          <li><a href="#" aria-label="Page 4">4</a></li>
-          <li><a href="#" aria-label="Page 5">5</a></li>
+          <li class="pagination"><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
+          <li class="pagination"><a href="#" aria-label="Page 2">2</a></li>
+          <li class="pagination"><a href="#" aria-label="Page 3">3</a></li>
+          <li class="pagination"><a href="#" aria-label="Page 4">4</a></li>
+          <li class="pagination"><a href="#" aria-label="Page 5">5</a></li>
         </ol>
       </section>
     </main>

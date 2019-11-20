@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Raleway:400,700&display=swap');
+
+body {
+    background-color: #ffffff;
+    font: normal 1em/1.5 'Roboto', arial, helvetica, serif;
+}
+
+.alignment {
+ display: inline;
+ margin: 1em 2em;
+}
+
+.header-style {
+    background-color: rgb(39, 39, 39);
+}
+
+.logo-img img {
+    width: 10%;
+}
+ 
+/* .mainmenu {
+    display: none;
+} */
+.mainmenu {
+    padding-left: 1em;
+    text-align: right;
+    text-decoration: none;
+}
+
+.menu-elements {
+    display: inline;
+}
+
+.section-header-title {
+  
+}
+
+.page-title {
+    font-size: 1.5em;
+}
+
+.product-title {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.5em;
+    margin: .5em 0;
+}
+
+.products-img {
+    max-width: 100%;
+}
+
+.products {
+    overflow: hidden;
+    max-width: 30em;
+    margin: 1em auto;
+}
+
+.products .products-text {
+    text-align: left;
+    padding: 0 1em;
+}
+
+.pagination {
+    display: inline-block;
+    list-style: none;
+}
+
+
+
+@media screen and (min-width: 60em) {
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    padding: 1em;
+}
+
+.mainmenu > li {
+    background-color: lime;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+@media screen and (min-width: 80em) {
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding: 1em;
+}
