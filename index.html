@@ -15,24 +15,23 @@
       <!-- Site logo, replace with your own -->
       <a class="logo-img" href="index.html"><img src="img/cloud-white.svg" alt="HTML Logo Cloud Logo for Cloud Snowboards"></a>
       <!-- Search for a product (non-functional) -->
-      <form class="alignment">
+      <form>
         <!-- <label>Product Search
           <input type="search" name="find" id="find">
         </label> -->
-        <button type="button"><span class="material-icons">search</span></button>
+        <button type="button"><span class="material-icons header-button">search</span></button>
       </form>
 
       <!-- Additional nav links -->
 
-      <ul  class="alignment">
-        <li class="alignment"><a href="#"><span class="material-icons">favorite_border</span></a></li>
-        <li class="alignment"><a href="#"><span class="material-icons">shopping_cart</span></a></li>
+      <ul>
+        <li><a href="#"><span class="material-icons shopping-cart header-button ">shopping_cart</span></a></li>
       </ul>
 
       <!-- Navigation menu and toggle button (non-functional) -->
-      <nav  class="alignment" aria-label="Primary">
-          <button type="button">
-            <span class="material-icons">menu</span>
+      <nav aria-label="Primary">
+          <button type="button" class="menubtn">
+            <span class="material-icons header-button">menu</span>
           </button>
           <ul class="mainmenu">
             <li><a href="#">Snowboards</a>
@@ -54,7 +53,7 @@
     </header>
 
     <main >
-      <div><img src="img/mountain.jpg" alt="Image of a mountain Range"><h1 class="section-header-title">Snowboard</h1><div>
+      <div><img class="products-page-img" src="img/mountain-1.jpg" alt="Image of a mountain Range">
       <header>
         <h1 class="page-title">Mens Snowboards</h1>
 
@@ -69,16 +68,7 @@
               <option value="newest">Newest releases</option>
             </select>
           </fieldset>
-          <!-- <fieldset>
-            <legend>Colour</legend>
-            <ul>
-              <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
-              <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label></li>
-              <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Grey</label></li>
-              <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Red</label></li>
-              <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
-            </ul>
-          </fieldset> -->
+
           <fieldset>
             <legend>Sizes</legend>
             <ol>
@@ -89,35 +79,6 @@
               <li><input type="checkbox" name="size" value="162MW" id="162MW"> <label for="162MW">162MW</label></li>
             </ol>
           </fieldset>
-          <!-- <fieldset>
-            <legend>Ratings (above)</legend>
-            <ol>
-              <li>
-                <input type="radio" name="rating" value="4" id="aboveFour">
-                <label for="aboveFour">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span>
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="3" id="aboveThree">
-                <label for="aboveThree">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="2" id="aboveTwo">
-                <label for="aboveTwo">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="1" id="aboveOne">
-                <label for="aboveOne">
-                  <span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
-                </label>
-              </li>
-            </ol>
-          </fieldset> -->
         </form>
       </header>
 
@@ -146,14 +107,8 @@
               </fieldset>
   
               <footer>
-                <dl>
-                  <dt>Rating</dt>
-                  <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-                </dl>
-                <data value="499.99"><del>$549.99</del> <ins>$499.99</ins></data>
-                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
+                <data class="product-price" value="499.99"><del>$549.99</del> <ins>$499.99</ins></data>
+                <button type="button" class="cart-button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
               </footer>
             </form>
           </article>
@@ -334,19 +289,20 @@
       </section>
     </main>
 
-    <footer>
-      <p>&copy; Copyright, 1991.</p>
+    <footer class="footer-style">
+        <a class="footer-logo-img" href="index.html"><img src="img/cloud-white.svg" alt="HTML Logo Cloud Logo for Cloud Snowboards"></a>
       <nav aria-label="Legal">
         <ul>
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Accessibility Policy</a></li>
+          <li><a class="footer-items" href="#">Terms of Use</a></li>
+          <li><a class="footer-items" href="#">Privacy Policy</a></li>
+          <li><a class="footer-items" href="#">Accessibility Policy</a></li>
         </ul>
       </nav>
       <ul>
-        <li><a href="#"><span class="material-icons">face</span> Facebook</a></li>
-        <li><a href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
-        <li><a href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>
+        <li><a class="footer-items" href="#"><span class="material-icons">face</span> Facebook</a></li>
+        <li><a class="footer-items" href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
+        <li><a class="footer-items" href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>
+        <p class="footer-items">&copy; Copyright, 2019.</p>
       </ul>
     </footer>
 

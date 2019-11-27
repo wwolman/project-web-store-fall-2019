@@ -5,38 +5,69 @@ body {
     font: normal 1em/1.5 'Roboto', arial, helvetica, serif;
 }
 
-.alignment {
- display: inline;
- margin: 1em 2em;
+.header-button {
+    background-color: rgb(42, 42, 42);
+    color: #ffffff;
+}
+
+.header-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.header-button:active {
+    background-color: black;
+    color: white;
 }
 
 .header-style {
     background-color: rgb(39, 39, 39);
+    position: relative;
 }
 
 .logo-img img {
-    width: 10%;
+    max-width: 5em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
  
-/* .mainmenu {
-    display: none;
-} */
+.menubtn {
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+}
+
+.shopping-cart {
+    position: absolute;
+    top: 0.5em;
+    right: 4em;
+}
+
 .mainmenu {
-    padding-left: 1em;
+    padding: 5.5em .5em .5em 0em;
     text-align: right;
     text-decoration: none;
+}
+
+.mainmenu .menu-list {
+    margin: 1em;
 }
 
 .menu-elements {
     display: inline;
 }
 
-.section-header-title {
-  
+.products-page-img {
+    max-width: 100%;
+    display: block;
+
 }
 
 .page-title {
     font-size: 1.5em;
+    text-align: center;
 }
 
 .product-title {
@@ -56,6 +87,27 @@ body {
     margin: 1em auto;
 }
 
+.product-price {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.cart-button {
+    background-color: black;
+    color: white;
+    width: 10em;
+    font-size: 1.5em;
+}
+
+.cart-button:hover {
+    background-color: #333;
+}  
+
+.cart-button:active {
+    background-color: darkgrey; 
+    color: #333;
+}
+
 .products .products-text {
     text-align: left;
     padding: 0 1em;
@@ -66,7 +118,24 @@ body {
     list-style: none;
 }
 
+.footer-style {
+    background-color: rgb(39, 39, 39);
+    text-align: left;
+    padding: 1.5em;
+}
 
+.footer-items {
+    color: #ffffff;
+    padding: auto;
+}
+
+.footer-logo-img img {
+    max-width: 6em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
 
 @media screen and (min-width: 60em) {
 .layout {
@@ -80,6 +149,7 @@ body {
     background-color: lime;
     display: inline-block;
     vertical-align: top;
+    margin: 5em;
 }
 
 
@@ -91,3 +161,20 @@ body {
     grid-gap: 1em;
     padding: 1em;
 }
+
+
+
+/* 
+.menubar {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+body {
+    margin-top: 6em;
+    display: inline-block;
+} */
