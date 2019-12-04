@@ -16,10 +16,8 @@
       <a class="logo-img" href="index.html"><img src="img/cloud-white.svg" alt="HTML Logo Cloud Logo for Cloud Snowboards"></a>
       <!-- Search for a product (non-functional) -->
       <form>
-        <!-- <label>Product Search
-          <input type="search" name="find" id="find">
-        </label> -->
-        <button type="button"><span class="material-icons header-button">search</span></button>
+          <input class="search-hidden" type="search" name="find" id="find">
+        <button type="button"><span class="material-icons header-button search">search</span></button>
       </form>
 
       <!-- Additional nav links -->
@@ -27,7 +25,6 @@
       <ul>
         <li><a href="#"><span class="material-icons shopping-cart header-button ">shopping_cart</span></a></li>
       </ul>
-
       <!-- Navigation menu and toggle button (non-functional) -->
       <nav aria-label="Primary">
           <button type="button" class="menubtn">
@@ -73,18 +70,19 @@
         <form>
           <fieldset>
             <select class="filter-button" name="sort" id="sort">
-              <option value="price-high">Price, highest to lowest</option>
-              <option value="price-low">Price, lowest to highest</option>
-              <option value="newest">Newest releases</option>
+              <optgroup label="Price">
+                <option value="price-high">Price, highest to lowest</option>
+                <option value="price-low">Price, lowest to highest</option>
+              </optgroup>
             </select>
-          </fieldset>
-          <fieldset>
             <select class="filter-button" name="sort" id="sort">
-              <option value="size-153">153</option>
-              <option value="size-156">156</option>
-              <option value="size-158">158</option>
-              <option value="size-162">162</option>
-              <option value="size-162MW">162MW</option>
+              <optgroup label="size">
+                <option value="size-153">153</option>
+                <option value="size-156">156</option>
+                <option value="size-158">158</option>
+                <option value="size-162">162</option>
+                <option value="size-162MW">162MW</option>
+              </optgroup>
             </select>
           </fieldset>
 <!-- 
@@ -104,15 +102,14 @@
       </header>
 
       <section>
-        <h2>Results</h2>
-
         <div class="layout">
           <!-- Product 1 -->
           <article class="products">
             <header>
-              <img class="product-img" src="img/arbor-whisky.jpg" alt="Product Image of the Arobr Whiskey">
+             <a class="product-link" href="#"><img class="product-img" src="img/arbor-whisky.jpg" alt="Product Image of the Arobr Whiskey">
             </header>
             <h3 class="product-title">Arbor Whiskey</h3>
+            </a>
             <!-- <p class="products-text">Hmmm, it seems as though Arbor is mixing its spirits with the naming scheme - American Whiskey is usually predominately made of corn, not malted barley as is Scotch Whisky - but we'll forgive this and take the Arbor Whiskey Snowboard straight up with a splash of pow for a season of shredding fun. A tough to beat combination of easy handling, tremendous performance in all snow types and top quality hand-built construction make the Whiskey darned easy to swallow. The Whiskey is a true all-mountain board that features an easy to ride Rocker System deisgn and durable construction at an affordable price.</p>
             <form>
       
@@ -137,9 +134,10 @@
           <!-- Product 2 -->
           <article class="products">
             <header>
-              <img class="product-img" src="img/arbor-element.jpg" alt="Product Image of the Arbor Element">
+             <a class="product-link" href="#"><img class="product-img" src="img/arbor-element.jpg" alt="Product Image of the Arbor Element">
             </header>
             <h3 class="product-title">Arbor Element</h3>
+            </a>  
             <!-- <p class="products-text">The Element is the board that launched the Arbor brand. Over the years, it has become our cornerstone, evolving with the times to remain the perfect all-terrain design. The Element is a mountain twin built for super clean, highly reliable performance and constructed with a focus on quality craftsmanship. This quintessential board speaks to our core mission and is sure to remain a classic for years to come. The Element is available in both System Rocker and System Camber technologies. The System Camber design offers a poppy ride with crisp, fully engaged performance.</p>
             <form>
               <fieldset>
@@ -169,9 +167,10 @@
           <!-- Product 3 -->
           <article class="products">
             <header>
-              <img class="product-img" src="img/arbor-a-frame.jpg" alt="Product Image of the Arbor A-Frame">
+            <a class="product-link" href="#"><img class="product-img" src="img/arbor-a-frame.jpg" alt="Product Image of the Arbor A-Frame">
             </header>
             <h3 class="product-title">Arbor A-Frame</h3>
+            </a>
             <!-- <p class="products-text">A new twist on an old favorite, the A-Frame is known for its relentless edge hold and unparalleled stability at speed and is now built with a directional, System Camber design. The newly redesigned chassis along with the addition of Grip-Tech contact points and Uprise fenders create a carving machine with an elevated ability to rail on edge and charge through chop. A slight taper in the tail increases the boards float in deeper snow and a sintered base guarantees you'll have no problem reaching maximum velocity. RWD Carbon A-Frame reinforcements run diagonally from the rear contact points to underneath the back foot, increasing power and drive when setting an edge to initiate hard-line carving.</p>
             <form>
               <fieldset>
@@ -201,9 +200,10 @@
           <!-- Product 4 -->
           <article class="products">
             <header>
-              <img class="product-img" src="img/arbor-annex.jpg" alt="Product Image of the Arbor Annex">
+              <a class="product-link" href="#"><img class="product-img" src="img/arbor-annex.jpg" alt="Product Image of the Arbor Annex">
             </header>
             <h3 class="product-title">Arbor Annex</h3>
+            </a>
             <!-- <p class="products-text">The Annex is the newest and most technical creation to stem from the ongoing collaboration between Bryan Iguchi and Arbor Snowboards. As Bryan's riding progressed to a state where he spends most of his time riding big-mountain lines, he needed a directional evolution of the fundamental performance we built into the Iguchi Pro Camber. Built on our System Camber technology, the Annex features a longer, drawn out nose with additional taper and a stub tail. The combination of these three features allow the board to float through powder effortlessly with increased power and drive when setting an edge. The Bio-Plastic Topsheet binds a Powerply stringer with our brand-new Carbon Vector Net reinforcements resulting in evenly distributed torsional power and accelerated response from tip to tail. The Annex features our extra-lightweight FSC Certified Highland ll Core, Recycled Steel Edges, and Entropy Bio Resin, making it both the principal of performance and sustainability in the Arbor line. The base graphic "scratches the surface of space an time" featuring artwork from Bryan's Art of Erosion gallery work.</p>
             <form>
               <fieldset>
@@ -233,9 +233,10 @@
           <!-- Product 5 -->
           <article class="products">
             <header>
-              <img class="product-img" src="img/arbor-cask.jpg" alt="Product Imag of the Arbor Cask">
+              <a class="product-link" href="#"><img class="product-img" src="img/arbor-cask.jpg" alt="Product Imag of the Arbor Cask">
             </header>
             <h3 class="product-title">Arbor Cask</h3>
+            </a>
             <!-- <p class="products-text">The Cask is a high volume, short length, System Camber snowboard designed for resort powder days that require a board with the versatility to handle the gamut of conditions you'll experience from your first untouched run to your last rally through the chop. A long drawn out nose for effortless float is paired with camber under foot and a short stub tail to maximize control through deep snow. Pow-Tech contact points under the back foot create a stronger edge to snow connection while Uprise Fenders soften edge-to-edge transition. The Cask is so much fun, you won't want to head home until you've ripped every last secret stash on the mountain.</p>
             <form>
               <fieldset>
@@ -265,9 +266,10 @@
           <!-- Product 6 -->
           <article class="products">
             <header>
-              <img class="product-img" src="img/arbor-shiloh.jpg" alt="Product Image of the Arbor Shiloh">
+              <a class="product-link" href="#"><img class="product-img" src="img/arbor-shiloh.jpg" alt="Product Image of the Arbor Shiloh">
             </header>
             <h3 class="product-title">Arbor Shiloh</h3>
+            </a>
             <!-- <p class="products-text">The Shiloh is a versatile mountain twin tailored for experienced freeriders who need a board to deliver quick edge-to-edge performance, snappy takeoffs and stable landings. A daily driver, the Shiloh excels in backcountry freestyle, but will hold its own anywhere on the mountain including trees, groomers, and the park. The Shiloh is available in both System Rocker and System Camber technologies. The System Camber design offers a poppy ride with crisp, fully engaged performance. The 2020 Shiloh is an artist collaboration with Portland based designer, Aaron James Draplin, known for his utilitarian, intelligently simplistic style and countless design contributions to the world of snowboarding.</p>
             <form>
               <fieldset>
@@ -319,7 +321,7 @@
           <li><a class="footer-items" href="#">Accessibility Policy</a></li>
         </ul>
       </nav>
-      <ul class="test">
+      <ul class="social-spacing">
         <li><a class="footer-social" href="#"><span class="material-icons">face</span> Facebook</a></li>
         <li><a class="footer-social" href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
         <li><a class="footer-social" href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>

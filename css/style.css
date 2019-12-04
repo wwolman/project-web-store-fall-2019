@@ -6,7 +6,7 @@ body {
 }
 
 .header-button {
-    background-color: rgb(42, 42, 42);
+    background-color: rrgb(39, 39, 39);
     color: #ffffff;
 }
 
@@ -16,47 +16,68 @@ body {
 }
 
 .header-button:active {
-    background-color: black;
+    background-color: rgb(39, 39, 39);
     color: white;
 }
 
 .header-style {
     background-color: rgb(39, 39, 39);
     position: relative;
+    padding: .6em;
 }
 
 .logo-img img {
-    max-width: 5em;
+    max-width: 1.5em;
     position: absolute;
-    left: 0;
-    right: 0;
+    top: .5em;
+    left: .5em;;
     margin: auto;
 }
  
+.menubtn:hover + .mainmenu {
+    display: contents;
+}
+
 .menubtn {
     position: absolute;
-    top: 0.5em;
+    top: 0.7em;
     right: 1em;
+    background: transparent;
+    border: none;
 }
 
 .shopping-cart {
     position: absolute;
     top: 0.5em;
-    right: 4em;
+    right: 3em;
+    background: transparent;
+}
+
+.search {
+    position: absolute;
+    top: 0.5em;
+    right: 5em;
+    background: transparent;
+}
+
+.search-hidden {
+    visibility: hidden;
 }
 
 .mainmenu {
-    padding: 5.5em .5em .5em 0em;
+    padding: 1em .5em .5em 0em;
     text-align: right;
     text-decoration: none;
+    display: none;
+    background-color: rgb(39, 39, 39);
+    position: absolute;
+    width: 100%;
+    top: 0em;
+    left: 0em;
 }
 
-.mainmenu .menu-list {
-    margin: 1em;
-}
-
-.menu-elements {
-    display: inline;
+.mainmenu a:visited {
+    color: white;
 }
 
 .products-page-img {
@@ -71,9 +92,9 @@ body {
 }
 
 .product-title {
-    font-weight: 700;
+    font-weight: 100;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
     margin: .5em 0;
 }
 
@@ -87,6 +108,15 @@ body {
     margin: 1em auto;
 }
 
+.product-link {
+    text-decoration: none;
+}
+
+.products a:visited {
+    color: black;
+}
+
+
 .product-price {
     font-size: 1.5em;
     font-weight: 700;
@@ -98,6 +128,7 @@ body {
     width: 10em;
     font-size: 1.3em;
     font-weight: 100;
+    margin: .7em;
 }
 
 .cart-button {
@@ -153,7 +184,7 @@ body {
     padding: 1em;
 }
 
-.test >li{
+.social-spacing >li{
     display: inline;
     margin: .5em;
 }
