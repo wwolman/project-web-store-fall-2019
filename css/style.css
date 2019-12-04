@@ -127,6 +127,32 @@ body {
 .footer-items {
     color: #ffffff;
     padding: auto;
+    max-width: 6em;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+}
+
+.footer-menu-spacing {
+    padding: 8em 0 0;
+}
+
+.footer-social {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    width: auto;
+    padding: 1em;
+}
+
+.test >li{
+    display: inline;
+    margin: .5em;
+}
+
+.copyright {
+    padding: 1em 1em .5em;
+    color: #ffffff;
 }
 
 .footer-logo-img img {
@@ -137,6 +163,14 @@ body {
     margin: auto;
 }
 
+@media screen and (min-width: 30em) {
+    .layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+        padding: 1em;
+    }
+    
 @media screen and (min-width: 60em) {
 .layout {
     display: grid;
@@ -152,9 +186,13 @@ body {
     margin: 5em;
 }
 
+.test >li{
+    display: inline;
+    margin: 8em;
+}
 
 
-@media screen and (min-width: 80em) {
+@media screen and (min-width: 75em) {
 .layout {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
