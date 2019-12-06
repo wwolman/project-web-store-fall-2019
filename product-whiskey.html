@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Snowboard Shop</title>
+    <meta name="description" content="[A short description]">
+    <meta name="author" content="[Your Name]">
+    <link rel="stylesheet" href="css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/product-style.css">
+  </head>
+  <body>
+    <header class="header-style">
+      <!-- Site logo, replace with your own -->
+      <a class="logo-img" href="index.html"><img src="img/cloud-white-words.svg" alt="HTML Logo Cloud Logo for Cloud Snowboards"></a>
+      <!-- Search for a product (non-functional) -->
+      <form>
+          <input class="search-hidden" type="search" name="find" id="find">
+        <button><span class="material-icons header-button search">search</span></button>
+      </form>
+      <ul>
+        <li><a href="#"><span class="material-icons shopping-cart header-button ">shopping_cart</span></a></li>
+      </ul>
+      <!-- Navigation menu and toggle button (non-functional) -->
+      <nav aria-label="Primary">
+          <button type="button" class="menubtn">
+            <span class="material-icons header-button">menu</span>
+          </button>
+          <ul class="mainmenu">
+            <li><a href="#">Snowboards</a>
+              <ul>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Bindings</a>
+              <ul>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Photos</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main >
+      <section>
+        <div class="layout">
+          <!-- Product 1 -->
+          <article class="products">
+            <header>
+             <a class="product-link" href="#"><img class="product-img" src="img/arbor-whisky.jpg" alt="Product Image of the Arobr Whiskey"></a>
+            </header>
+          </article>
+          <article class="p-description">
+            <h3 class="product-title">Arbor Whiskey</h3>
+            <div class="item">
+              <input type="radio" name="star" id="one" value="1">
+              <label for="one"></label>
+              <input type="radio" name="star" id="two" value="2">
+              <label for="two"></label>
+              <input type="radio" name="star" id="three" value="3">
+              <label for="three"></label>
+              <input type="radio" name="star" id="four" value="4">
+              <label for="four"></label>
+              <input type="radio" name="star" id="five" value="5">
+              <label for="five"></label>
+            </div>
+              <p class="products-text">Hmmm, it seems as though Arbor is mixing its spirits with the naming scheme - American Whiskey is usually predominately made of corn, not malted barley as is Scotch Whisky - but we'll forgive this and take the Arbor Whiskey Snowboard straight up with a splash of pow for a season of shredding fun. A tough to beat combination of easy handling, tremendous performance in all snow types and top quality hand-built construction make the Whiskey darned easy to swallow. The Whiskey is a true all-mountain board that features an easy to ride Rocker System deisgn and durable construction at an affordable price.</p>
+            <form>
+              <fieldset>
+                <select class="filter-button" name="sort" id="sort">
+                  <optgroup label="size">
+                    <option value="size-153">153</option>
+                    <option value="size-156">156</option>
+                    <option value="size-158">158</option>
+                    <option value="size-162">162</option>
+                    <option value="size-162MW">162MW</option>
+                  </optgroup>
+                </select>
+              </fieldset>
+              <footer>
+                <data class="product-price" value="499.99"><h2>$499.99</h2></data>
+                <button type="button" class="cart-button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+                <button type="button" class="buy-button">Buy it now</button>
+              </footer>
+            </form>
+            <img class="product-specs" src="img/wiskey-specs.png" alt="A picture of the Arbor Whiskey design specs">
+            
+            <iframe class="product-video" title="vimeo-player" src="https://player.vimeo.com/video/138695571" width="320" height="180" frameborder="0" allowfullscreen></iframe>
+            <iframe class="product-video" src="https://player.vimeo.com/video/290030013?title=0&byline=0" width="320" height="180" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+            
+            <h3>Notable Features</h3>
+            <img src="img/noteable-features.png" alt="A list of the noteable features of the Arbor Whiskey">
+          </article>
+      </section>
+
+    <footer class="footer-style">
+        <a class="footer-logo-img" href="index.html"><img src="img/cloud-white.svg" alt="HTML Logo Cloud Logo for Cloud Snowboards"></a>
+      <nav aria-label="Legal">
+        <ul class="footer-menu-spacing">
+          <li><a class="footer-items" href="#">Terms of Use</a></li>
+          <li><a class="footer-items" href="#">Privacy Policy</a></li>
+          <li><a class="footer-items" href="#">Accessibility Policy</a></li>
+        </ul>
+      </nav>
+      <ul class="social-spacing">
+        <li><a class="footer-social" href="#"><span class="material-icons">face</span> Facebook</a></li>
+        <li><a class="footer-social" href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
+        <li><a class="footer-social" href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>
+      </ul>
+      <p class="copyright">&copy; Copyright, 2019.</p>
+    </footer>
+
+  </body>
+</html>
